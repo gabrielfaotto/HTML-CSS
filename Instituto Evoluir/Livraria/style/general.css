@@ -1,0 +1,12 @@
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header, footer { width: 100% }
+main, aside { height: 100px }
+main { background-color: purple; float: left; width: 60% }
+aside { background-color: blue;  float: right; width: 38% }
+footer { position: fixed; bottom: 0}

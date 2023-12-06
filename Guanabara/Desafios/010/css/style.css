@@ -1,0 +1,193 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@font-face {
+    font-family: 'Idroid';
+    src: url(/fonts/idroid.otf);
+}
+
+
+body{
+    margin: 0px;
+    background-color: #55db9d;
+}
+
+header {    
+    box-shadow: -1px 5px 4px #00000033;
+    height: 10em;
+    background-image: linear-gradient(360deg, #1b3522,  #418353);
+    padding: 20px;
+}
+
+header > h1{
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-shadow: 3px 3px 4px #00000098;
+}
+
+header > p{
+    color: #ffffff;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-shadow: 3px 3px 4px #00000098;
+}
+
+.cabecalho {
+    text-align: center;
+}
+
+nav {
+    margin-top: 42px;
+}
+
+nav > a {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin-right: 15px;
+    padding: 10px;
+    color: #ffffffaf;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold
+}
+
+nav > a:hover{
+    color: #1b3522;
+    background-color: #418353;
+}
+
+section#story {
+    box-shadow: 0px 5px 15px #0000008c;
+    background-color: #ffffff;
+    width: 1000px;
+    margin-left: 150px;
+    padding: 20px;
+    text-align: center;
+}
+
+.story-text {
+    text-align: start;
+}
+
+section#story > h1 {
+    font-size: 2em;
+}
+
+section#story > h2 {
+    background-image: linear-gradient(90deg, #9afab2b9, #35694200 );
+}
+
+section#story > h1, h2 {
+    text-align: justify;
+    font-family: 'Idroid', 'Roboto', Arial, Helvetica, sans-serif;
+    color: #346942;
+}
+
+section#story > p{
+    text-indent: 25px;
+    font-size: 0.9em;
+}
+
+.desta{
+    font-weight: bold;
+    color: #346942;
+}
+
+.link {
+    font-weight: bolder;
+    color: #346942;
+    background-color: #9afab2d8;
+}
+
+.link > a{
+    text-decoration: none;
+}
+
+.link > a:visited {
+    color: #346942;
+}
+
+.link > a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
+p#last {
+    margin-bottom: 0px;
+}
+
+section#video {
+    background-color: #346942;
+    width: 960px;
+    margin-left: 170px;
+    box-shadow: 0px 13px 15px #0000009d;
+    text-align: center;
+    padding: 20px;
+}
+
+iframe {
+    width: 900px;
+    height: 450px;
+}
+
+section#extra {
+    background-color: #ffffff;
+    width: 970px;
+    height: 450px;
+    margin-left: 170px;
+    padding: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 5px 15px #0000008c;
+}
+
+section#extra{
+    font-size: 0.9em;
+}
+
+section > h4{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #418353;
+    padding: 10px;
+    margin: 0px;
+    font-weight: bolder;
+    font-size: 1em;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+article > p{
+    text-indent: 15px;
+    font-size: 0.9em;
+}
+
+article > ul{
+    list-style-image: url(/img/iconcerto10.png);
+    font-size: 0.9em;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
+
+article {
+    padding: 10px 10px 10px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #8fe9bf;
+    width: 950px;
+    box-shadow: 3px 3px 4px #00000038;
+}
+
+footer {
+    background-color: #346942;
+    color: #ffffff;
+    text-align: center; 
+    font-style: italic;
+    margin-top: 15px;
+    padding: 5px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+

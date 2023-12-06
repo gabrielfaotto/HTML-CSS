@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Stint+Ultra+Condensed&family=Yantramanav:wght@100&display=swap');
+        body {
+            background-image: url(img/coffebgedit.avif);
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+        main {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 5%;
+            margin-left: 35%;
+            width: 30%;
+        }
+        h1 {
+            font-size: 20px;
+            font-family: 'Belleza', sans-serif;
+            color: darkgreen;
+        }
+        h2 {
+            font-size: 40px;
+        }
+        label {
+            text-align: left;
+            font-size: 13px;
+        }
+        input{
+            margin-bottom: 5px;
+            padding: 10px;
+            width: 400px;
+        }
+        select, button {
+            margin-bottom: 5px;
+            padding: 10px;
+            width: 425px;
+        } 
+        button {
+            border-radius: 50px;
+            margin-top: 20px;
+            color: aliceblue;
+            background-color: rgb(9, 71, 56);
+            cursor: pointer;
+            border: rgb(9, 71, 56);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>BEM-VINDO</h1>
+        <h2>Faça seu Login</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatum placeat ex, ipsa saepe tenetur mollitia, aut officiis minima itaque, soluta ut unde hic minus. Assumenda omnis aliquam optio saepe!</p>   
+    <form name="coffee order">
+        <label for="qtd">Qual seu Nome?</label> 
+        <input type="text" placeholder="NOME" name="name" id="qtd">
+        <label for="qtd">Qual café tu queres?</label> 
+        <select name="coffe-type">
+            <option>:: Selecione o tipo de café ::</option>
+            <option>Prensa Francesa</option>
+            <option>Cappucino</option>
+            <option>Moka</option>
+        </select>
+        <label for="qtd">Quantas xícaras?</label> <input type="number" name="qtd" min="1" value="1" id="qtd">
+        <button>Finalizar pedido</button>
+    </form>
+    </main>
+</body>
+</html>

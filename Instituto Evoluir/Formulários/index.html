@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-widht, initial scale=1.0">
+        <title>Formulário Pog</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/logo-form.png" type="image/x-icon">
+    </head>
+    <body>
+        <div id="all">
+        <div id="form">
+            <h1 id="principal">Formulário Legal</h1>
+            <form action="">
+                <label for="name">Nome Completo</label>
+                <br>
+                    <input class="input-normal" type="text" name="name" id="name" placeholder="Digite Seu Nome..." required>
+        
+                <br>
+                
+                <label for="email">Email</label>
+                <br>
+                    <input class="input-normal" type="email" name="email" id="emai" placeholder="seuemail@gmail.com" required>
+            
+                <br>
+            
+                <label for="telefone">Telefone</label>
+                <br>
+                    <input class="input-normal" id="telefone" type="tel" id="telefone" name="telefone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX" required>
+               
+                    <br>
+                 
+                <label for="dropbox">Escolha uma cidade:</label>
+                <br>
+                <select name="dropbox" id="dropbox" class="input-normal" required>
+                    <option value="option1">Porto Alegre</option>
+                    <option value="option2">Campo Bom</option>
+                    <option value="option3">Sapiranga</option>
+                    <option value="option4">Novo Hamburgo</option>
+                    <option value="option5">Dois Irmãos</option>
+                    <option value="option6">Canela</option>
+                    <option value="option7">Igrejinha</option>
+                    <option value="option8">Gramado</option>
+                </select>
+
+                <br>
+                
+                <input class="buttom" type="submit" value="Enviar">
+                <input class="buttom" type="reset" value="Limpar">
+            </form>
+        </div>     
+       
+    </div>
+    </body>
+</html>

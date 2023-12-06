@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+        <title>Links</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #71e9c1;
+            }
+        
+            a {
+                color: rgb(30, 3, 104);
+                text-decoration: none;
+                font-weight: bold
+            }
+        
+            a:visited {
+                color: rgb(6, 56, 163);
+            }
+       
+            a:hover {
+                color: black;
+                text-decoration: underline;
+            }
+        
+            a:active {
+                color: aqua;
+            }
+        
+            .special {
+                background-color: rgb(100, 100, 241);
+            }
+
+            .special::before {
+                content: "⇒ ";
+            }
+
+            .special::after {
+                content: " ⇐";
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Personalizando Links</h1>
+        <ul>
+            <li><a href="https://berserk.fandom.com/pt-br/wiki/P%C3%A1gina_principal" target="_blank" rel="external">Wiki de Berserk</a></li>
+            <li><a href="https://www.brmangas.net/manga/vagabond-online/" class="special" target="_blank" rel="external">Ler Vagabound Online</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank" rel="external">Site da W3Schools</a></li>
+        </ul>
+    </body>
+</html>
