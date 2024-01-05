@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login</title>
+        <link rel="shortcut icon" href="https://imgs.search.brave.com/yw6XA3Hw4UzSPT5CTFD1uJWoKRr1Ca6qV9RoDiuyho4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jdXRl/d2FsbHBhcGVyLm9y/Zy8yMS9uaXJ2YW5h/LXNtaWxleS1mYWNl/LXBuZy9IRC1OaXJ2/YW5hLVNtaWxleS1G/YWNlLVBuZy1OaXJ2/YW5hLVRyYW5zcGFy/ZW50LVBORy1JbWFn/ZS0ucG5n" type="image/x-icon">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');            
+            @import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+            :root {
+                --bordacor:#acacac;
+                --bgcolor: #222222;
+                --yellow: #f8b822;
+                --yellowdark: #cc971d;
+                --fontepadrao: "Lato", Arial, Verdana, sans-serif;
+                --fontetitulo: "Afacad", "Lato", Arial, Verdana, sans-serif;
+            }
+
+            * {
+                margin: 0px;
+            }
+
+            header {
+                border-bottom: 1px solid var(--bordacor);
+                padding: 10px;
+                min-height: 69px;
+                background-color: black;
+                text-align: center;
+            }
+
+            header > img { 
+                width: 200px;
+                height: auto;
+            }
+           
+            section#videodiv {
+                position: relative;
+                padding-bottom: 55%;
+                background-color: black;
+                text-align: center;
+            }
+            
+            section#videodiv > iframe {
+                position: absolute;
+                left: 5%;
+                width: 90%;
+                height: 90%;
+            }
+
+            section#videodiv > h1 {
+                color: var(--yellow);
+                font-family: var(--fontepadrao);
+                letter-spacing: 2.5px;
+            }
+
+            section#formdiv {
+                border-top: 1px solid var(--bordacor);
+                margin: auto;
+                padding: 50px;
+                padding-top: 60px;
+                background-color: var(--bgcolor);
+            }
+
+            section#formdiv h1 {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+                font-family: var(--fontepadrao);
+                font-weight: light;
+                color: var(--yellow);
+                font-size: 36px;
+                letter-spacing: 3px;
+            }
+
+            section#formdiv hr {
+                width: 25%;
+                margin: auto;
+            }
+
+            section#formdiv form {
+                min-width: 270px;
+                display: flex;
+                align-content: center;
+                flex-wrap: wrap;
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            section#formdiv label {
+                font-family: var(--fontepadrao);
+                font-size: 10px;
+                color: #ffffff;
+            }
+
+            section#formdiv input {
+                height: 40px;
+                width: 50%;
+            } 
+
+            textarea {
+                height: 40px;
+                width: 50%;
+                margin-bottom:20px;
+            }
+
+            input.botao {
+                margin-left: 2px;
+                padding: 5px;
+                background-color: var(--yellow);
+                border: none;
+                border-radius: 5px;
+                font-family: var(--fontepadrao);
+                color: var(--bgcolor);
+            }
+
+            input.botao:hover {
+                background-color: var(--yellowdark);
+                color: #131313;
+                cursor: pointer;
+            }
+
+            footer {
+
+                background-color: black;
+                border-top: 1px solid var(--bordacor);
+            }
+            
+            footer * {
+                padding-top: 30px;
+                box-sizing: border-box;
+            }
+
+            footer > p {
+                text-align: center;
+                white-space: nowrap;
+                font-family: var(--fontepadrao);
+                font-size: 12px;
+                color: var(--bordacor);
+               letter-spacing: 1px;
+                padding-top: 30px;
+            }
+
+            footer div {
+                width: 20%;
+                min-width: 300px;
+                justify-content: space-evenly;
+                display: flex;
+                margin: auto;
+            }
+
+            footer img {  
+                width: 10%;
+                height: auto;
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="https://imgs.search.brave.com/p-nChan0-Drq6wRYeSGr0LgPTAExyymoHI53dpyN54s/rs:fit:860:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzAz/L05pcnZhbmEtTG9n/by0xOTg5LTgwMHgz/ODQucG5n" alt="Nirvana Logo">
+        </header>
+        <main>
+            <section id="videodiv">
+                <iframe width="1200" height="700" src="https://www.youtube.com/embed/DtzyC0UkeQ0?si=dzx5RaovUSxjLhSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h1>The Story of Nirvana</h1>
+            </section>
+            <section id="formdiv">
+                <h1>LOGIN</h1>
+                <hr>
+                <form action="#">
+                    <label for="name">NOME COMPLETO*</label><br>
+                        <input type="text" name="name" id="name" required><br>
+                     <label for="email">EMAIL*</label><br>
+                          <input type="email" name="email" id="email" required><br>
+                      <label for="msg">MENSAGEM*</label><br>
+                          <textarea name="msg" id="msg" cols="30" rows="10" required></textarea><br>
+                       <input class="botao" type="submit" name="submit" id="submit" value="ENVIAR"><br>
+                  </form>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <img src="https://encurtador.com.br/fhuV0" alt="Youtube">
+                <img src="https://encurtador.com.br/nwALU" alt="Instagram">
+                <img src="https://encurtador.com.br/loJLT" alt="Facebook">
+                <img src="https://encurtador.com.br/hLT34" alt="TikTok">
+                <img src="https://encurtador.com.br/zCJT1" alt="X">
+                <img src="https://encurtador.com.br/csJYZ" alt="Escute Metallica">
+            </div>
+            <p>Site criado por Gabriel Faotto para o Instituto Evoluir</p><br><br><br>
+        </footer>
+    </body>
+</html>
