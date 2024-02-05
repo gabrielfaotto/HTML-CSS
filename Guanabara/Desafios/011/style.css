@@ -1,0 +1,17 @@
+body {
+    height: 97vh;
+    background-color: black;
+    background-image: url(img/espaco.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+}
