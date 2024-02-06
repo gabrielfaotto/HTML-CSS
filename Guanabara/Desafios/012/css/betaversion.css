@@ -33,10 +33,11 @@ header > p {
 }
 
 p {
+    min-width: 2px;
     padding-bottom: 2em;
     line-height: 2em;
     font-family: 'Sriracha', 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 3.5vw;
 }
 
 a {
@@ -54,7 +55,7 @@ section.box {
 
 section#img1 {
     background-image: url(../img/background001.jpg);
-    background-position: center center;
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
