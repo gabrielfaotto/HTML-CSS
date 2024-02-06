@@ -59,6 +59,7 @@ section#img1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
 }
 
 section#img1 > p {
@@ -75,6 +76,7 @@ section#img2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
 }
 
 section#img2 > p {
