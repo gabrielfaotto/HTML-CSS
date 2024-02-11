@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "FuturaRegular";
+    src: url(fonts/Futura\ Std\ Medium.otf);
+}
+@font-face {
+    font-family: "FuturaBold";
+    src: url(fonts/FuturaEF\ DemiBold\ Regular.otf);
+}
+
+
+:root {
+    --bgcolor: #0D1A2D;
+    --container-color: #15273F;
+    --price-color: #01FBF9;
+    --title-font: "FuturaBold", Verdana, Geneva, Tahoma, sans-serif;
+    --default-font: "FuturaRegular", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html, body {
+    background-color: var(--bgcolor);
+    height: 97vh;
+}
+
+main {
+    background-color: var(--container-color);
+    width: 280px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+h1.title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: var(--default-font);
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+p {
+    font-family: var(--default-font);
+    font-size: 0.8em;
+    color: #ffffff;
+}
+
+p#price {
+    display: inline-block;
+    margin-top: 15px;
+    padding-right: 45%;
+    font-weight: bold;
+    color: var(--price-color);
+}
+
+p#time {
+    display: inline-block;
+    text-align: end;
+}
+
+img#main-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+img.icon {
+    height: auto;
+}
+
+img#avatar {
+    width: 10%;
+}
+
+footer {
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

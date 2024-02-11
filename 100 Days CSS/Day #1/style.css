@@ -1,0 +1,89 @@
+div.main {
+    background-color: #43389F;
+    background-image: linear-gradient(to top right, #433BA0, #4EC4C9);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);  
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+div.centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.numero {
+    width: 200px;
+    height: 100px;
+}
+
+div.meioum {
+    position: absolute;
+    left: -16px;
+    background-color: #fff;
+    width: 20px;
+    height: 40px;
+    border-radius: 3px;
+    z-index: 1;
+    transform: rotate(50deg);
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.205);
+}
+
+div.um {
+    position: absolute;
+    background-color: #fff;
+    width: 24px;
+    height: 100px;
+    z-index: 10;
+    border-radius: 3px;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.205);
+}
+
+div.zeroum {
+    position: absolute;
+    left: 17px;
+    width: 100px;
+    height: 100px;
+    z-index: 5;
+    border: 24px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.205);
+}
+
+
+
+div.zerodois {
+    position: absolute;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    border: 24px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.205);
+}
+
+span.textocima {
+    display: block;
+    margin-top: 6px;
+    font-size: 82px;
+    line-height: 60px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+span.textobaixo {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bolder;
+    line-height: 25px;
+}
