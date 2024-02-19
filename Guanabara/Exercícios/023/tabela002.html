@@ -10,25 +10,41 @@
             }
             
             table {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
+                position: relative;
                 width: 80vw;
                 border-collapse: collapse;
             }
         
+            caption {
+                font-size: 1.5em;
+                font-weight: bolder;
+                padding: 10px;
+            }
+
+            tbody > tr:nth-child(odd) { /*Ímpar*/
+                background-color: white;
+            }
+            
+            tbody > tr:nth-child(even) { /*Par*/
+                background-color: lightgray;
+            }
+            
+            thead > tr > th {
+                position: sticky;
+                top: -1px;
+                background-color: #575656;;
+            }
+
             th, td {
                 border: 1px solid #a2a9b1;
             }
 
-            th {
-                background-color: #EAECF0;
+            th, td.th {
+                background-color: #575656;
+                color: #fff;
+                font-weight: bolder;
                 padding: 10px;
-            }
-        
-            td {
-                background-color: #F8F9FA;
+                text-align: center;
             }
 
             td.meio, td.porcem {
@@ -46,8 +62,9 @@
     </head>
     <body>
         <!--
-            ANATOMIA PARA TABEAS GRANDES
+            ANATOMIA PARA TABELAS GRANDES
             TABLE
+                CAPTION
                 THEAD
                     TR, TD, TH    
                 TBODY
@@ -57,14 +74,15 @@
         -->
         
         <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
-                    <th>Posição</th>
-                    <th>Unidade federativa</th>
-                    <th>População</th>
-                    <th>Mudança</th>
-                    <th>% da hop. total</th>
-                    <th>País comparável</th>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Unidade federativa</th>
+                    <th scope="col">População</th>
+                    <th scope="col">Mudança</th>
+                    <th scope="col">% da hop. total</th>
+                    <th scope="col">País comparável</th>
                 </tr>
             </thead>
             <tbody>
@@ -286,7 +304,14 @@
                 </tr>
             </tbody>
             <tfoot>
-
+                <tr>
+                    <th scope="row">Total</th>
+                    <td class="th">Brasil</td>
+                    <td class="th">214,3 milhões</td>
+                    <td class="th">+242.60%</td>
+                    <td class="th">100%</td>
+                    <td class="th">Nigéria (206.139.589 habitantes)</td>
+                </tr>
             </tfoot>
         </table>
     </body>
