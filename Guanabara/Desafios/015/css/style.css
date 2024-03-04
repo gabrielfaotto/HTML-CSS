@@ -1,78 +1,40 @@
 @charset "UTF-8";
 
-body, html {
-    height: 96vh;
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
     background-color: black;
-    background-image: url(../img/fundo-madeira.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
+}
+
+body {
+    background: url('../img/fundo-madeira.jpg') center center no-repeat;
     background-size: cover;
 }
 
-iframe {
+main {
+    height: 100vh;
+    position: relative;
+}
+
+section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 627px;
+    width: 311px;
+    background: url(../img/frame-iphone.png) no-repeat;
+}
+
+iframe#screen {
     position: relative;
     top: 80px;
     left: 22px;
     height: 471px;
-    width: 267px;
-}
-
-section.cell {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 627px;
-    width: 311px;
-    transform: translate(-50%, -50%);
-    background-image: url(../img/frame-iphone.png);
-    background-repeat: no-repeat;
-}
-
-section.icons {
-    height: 60vh;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0%;
-}
-
-div.link {
-    height: 50px;
-    width: 50px;
-    margin: 20px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 50%;
-    box-shadow: 2px 2px 10px #000000a9;
-}
-
-div.link:hover {
-    border: 1px solid white;
-    transform: translate(-3px, -3px);
-    transition: .3s, border 1s;
-}
-
-div#home {
-    background-image: url(../img/logo-home.jpg);
-}
-
-div#youtu {
-    background-image: url(../img/logo-youtube.jpg);
-}
-
-div#git {
-    background-image: url(../img/logo-github.jpg);
-}
-
-div#insta {
-    background-image: url(../img/logo-instagram.jpg);
-}
-
-div#x {
-    background-image: url(../img/logo-twitter.jpg);
-}
-
-div#face {
-    background-image: url(../img/logo-facebook.jpg);
+    width: 269px;
 }
