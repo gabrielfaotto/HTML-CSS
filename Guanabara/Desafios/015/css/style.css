@@ -38,3 +38,24 @@ iframe#screen {
     height: 471px;
     width: 269px;
 }
+
+section#redes {
+    text-align: right;
+}
+
+section#redes img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
+    box-sizing: border-box;
+}
+
+section#redes img:hover {
+    border: 2px solid white;
+    transform: translate(-3px, -3px);
+    transition: .3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.404);
+}
+
+
