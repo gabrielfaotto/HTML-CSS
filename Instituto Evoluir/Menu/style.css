@@ -1,0 +1,245 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --font-padrão: "Lato", Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body {
+    background: url(img/bg.jpg.webp) center center no-repeat;
+    background-size: cover;
+    font-family: var(--font-padrão);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.199);
+    display: flex;
+    height: 70px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+div.hamburguer {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+div.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+ul.navLinks {
+    display: flex;
+    list-style: none;
+}
+
+ul#navLinkss {
+    position: fixed;
+    display: none;
+    width: 150px;
+    list-style: none;
+    margin: 40.5px 0px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.589);
+    animation: fadeIn 0.2s ease forwards;
+    z-index: 100;
+}
+    
+@keyframes fadeIn {
+    from {
+        transform: translateX(-20px);
+    }
+}
+
+li {
+    margin: 20px;
+}
+
+a.menu {
+    margin: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.menu:hover {
+    background-color: rgba(0, 0, 0, 0.459);
+    transition: .5s;
+}
+
+img#icon {
+    width: 50px;
+}
+
+
+@media screen and (max-width: 815px){
+    ul.navLinks {
+        display: none;
+    }
+
+    div.hamburguer {
+        display: flex;
+    }
+}
+
+main {
+    width: 100%;
+    height: 88vh;
+
+}
+
+section.content {  
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    width: 50%;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+div#container-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    padding-top: 40px;
+}
+
+aside#form-title {
+    background: black url(img/pc.jpg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 70px 0px 74px 0px;
+}
+
+aside#form-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #365463b3;
+}
+
+h1#text-form-title {
+    font-size: 2em;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+form {
+    height: 316px;
+    min-width: 100px;
+    background-color: #ffffff80;
+    z-index: 20;
+}
+
+input.form-control {
+    height: 50px;
+    width: 330px;
+    border: 1px solid transparent;
+    padding: 0px 20px 0px 20px;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.329);
+}
+
+input.form-control::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    input.form-control {
+        width: 230px;
+    }
+}
+
+button {
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: .3s;
+    border: 1px solid black;
+    background-color: #d3d1d1;
+}
+
+div#container-extra-itens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+div#container-checkbox {
+    display: inline-block;
+    position: relative;
+}
+
+div#container-forgot {
+    display: inline-block;
+    text-align: right;
+}
+
+label#label-checkbox {
+    margin-left: 25px;
+    color: white;
+    font-size: 13px;
+}
+
+input#checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+}
+
+a#forgot {
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}

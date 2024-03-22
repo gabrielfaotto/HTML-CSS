@@ -5,32 +5,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        <script src="main.js"></script>
         <title>Sidebar</title>
     </head>
     <body>
         <header>
-           <a href="#">Home</a>
-           <a href="#">Cursos</a>
-           <a href="#">Contato</a>
-           <a href="#">Sobre</a> 
-            <img src="img/icon.png" alt="Ícone">
+            <nav>  
+                <div onclick="clickMenu()" class="hamburguer">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div> 
+                <ul class="navLinks">
+                    <li><a class="menu" href="#">Home</a></li>
+                    <li><a class="menu" href="#">Cursos</a></li>
+                    <li><a class="menu" href="#">Contato</a></li>
+                    <li><a class="menu" href="#">Sobre</a></li>
+                </ul>   
+            </nav>
+            <img id="icon" src="img/icon.png" alt="Ícone">
         </header>
         <main>
-            <section class="form">
-                <aside>
-                    <h1>Login</h1>
+            <ul id="navLinkss">
+                <li><a class="menu" href="#">Home</a></li>
+                <li><a class="menu" href="#">Cursos</a></li>
+                <li><a class="menu" href="#">Contato</a></li>
+                <li><a class="menu" href="#">Sobre</a></li>
+            </ul>
+            <section class="content">
+                <aside id="form-title">
+                    <h1 id="text-form-title">Login</h1>
                 </aside>
                 <form action="#">
-                    <input type="text" name="username" id="username" placeholder="Username" required><br>
-                    <input type="password" name="password" id="password" placeholder="Password" required><br>
-                    <button type="submit">Enviar</button>
-                    <div>
-                        <div>
-                            <input type="checkbox">
-                            <label for="checkbox">Lembre-se de Mim</label>
-                        </div>
-                        <div>
-                            <a href="#">Esqueceu a Senha?</a>
+                    <div id="container-form">
+                        <input class="form-control" type="text" name="username" id="username" placeholder="Username" required><br>
+                        <input class="form-control" type="password" name="password" id="password" placeholder="Password" required><br>
+                        <button type="submit">Enviar</button>
+                        <div id="container-extra-itens">
+                            <div id="container-checkbox">
+                                <input id="checkbox" type="checkbox">
+                                <label id="label-checkbox" for="checkbox">Lembre-se de Mim</label>
+                            </div>
+                            <div id="container-forgot">
+                                <a id="forgot" href="#">Esqueceu a Senha?</a>
+                            </div>
                         </div>
                     </div>
                 </form>
