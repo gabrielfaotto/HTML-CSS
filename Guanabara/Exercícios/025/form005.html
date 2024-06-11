@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name=viewport content="width=device-width, initial-scale=1.0">
+        <title>Formulários</title>
+    </head>
+    <body>
+        <h1>Exemplo de Formulário</h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="amo" id="iamo"> <label for="iamo">Amo</label> <br>
+                <input type="radio" name="odio" id="iodio"> <label for="iodio">Odeio</label> <br>
+                <input type="radio" name="neut" id="ineut"> <label for="ineut">Neutro</label> <br>
+            </fieldset>
+            <fieldset>
+                <legend>Drogas Favoritas</legend>
+                <input type="checkbox" name="macon" id="imacon"> <label for="imacon">Maconha</label> <br> 
+                <input type="checkbox" name="coca" id="icoca"> <label for="icoca">Cocaína</label> <br>
+                <input type="checkbox" name="crack" id="icrack"> <label for="icrack">Crack</label> <br>
+                <input type="checkbox" name="hero" id="ihero"> <label for="ihero">Heroína</label> <br>
+                <input type="checkbox" name="lsd" id="ilsd"> <label for="ilsd">LSD</label> <br>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </body>
+</html>
